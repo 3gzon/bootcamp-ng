@@ -1,3 +1,6 @@
-<app-card [title]="posts[0].title"></app-card>
-<app-card [title]="posts[1].title"></app-card>
-<app-card [title]="posts[2].title"></app-card>
+<div>
+  <label for="">Payee Name</label>
+  <input type="text" (input)="onNameChange($any($event.target).value)">
+</div>
+
+{{name | titlecase}}
