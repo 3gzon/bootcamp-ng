@@ -23,5 +23,29 @@ export class AppComponent {
       title: 'title four',
       url: 'https://picsum.photos/id/234/200/300',
     },
+    {
+      title: 'title four',
+      url: 'https://picsum.photos/id/234/200/300',
+    },
+    {
+      title: 'title four',
+      url: 'https://picsum.photos/id/234/200/300',
+    },
+    {
+      title: 'title four',
+      url: 'https://picsum.photos/id/234/200/300',
+    },
+    {
+      title: 'title four',
+      url: 'https://picsum.photos/id/234/200/300',
+    },
+    {
+      title: 'title four',
+      url: 'https://picsum.photos/id/234/200/300',
+    },
   ];
+
+  checkIndex(index: number) {
+    return Math.abs(this.currentPage - index) < 5;
+  }
 }
