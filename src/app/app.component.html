@@ -13,23 +13,7 @@
     </li>
   </ul>
 </nav>
-<!-- <div>
-  <h4>{{images[currentPage].title}}</h4>
+<div>
+  <h4 appClass [backgroundColor]="'red'">{{images[currentPage].title}}</h4>
   <img src="{{images[currentPage].url}}" alt="">
-</div> -->
-
-<div [ngSwitch]="currentPage">
-  <div *ngSwitchCase="0">
-    current page is 0
-  </div>
-  <div *ngSwitchCase="1">
-    current page is 1
-  </div>
-  <div *ngSwitchCase="2">
-    current page is 2
-  </div>
-
-  <div *ngSwitchDefault="3">
-    threeeee
-  </div>
 </div>
