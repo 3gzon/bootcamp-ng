@@ -1,3 +1,50 @@
-<app-card [title]="posts[0].title"></app-card>
-<app-card [title]="posts[1].title"></app-card>
-<app-card [title]="posts[2].title"></app-card>
+<div class="container">
+  <div class="row">
+    <div class="form-group col">
+      <label for="">Payee Name</label>
+      <input class="form-control" type="text" (input)="onNameChange($any($event.target).value)">
+    </div>
+    <div class="col">
+      <label for=""><b>Name</b></label>
+      <div>
+        {{name | titlecase}}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col">
+      <label for="">Payment date</label>
+      <input class="form-control" type="date" (input)="onDateChange($any($event.target).value)">
+    </div>
+    <div class="col">
+      <label for=""><b>Payment date</b></label>
+      <div>
+        {{date | date}}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col">
+      <label for="">Amout</label>
+      <input class="form-control" type="number" (input)="onAmountChange($any($event.target).value)">
+    </div>
+    <div class="col">
+      <label for=""><b>Amout</b></label>
+      <div>
+        {{amount | currency}}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col">
+      <label for="">Miles</label>
+      <input class="form-control" type="number" (input)="onMilesChange($any($event.target).value)">
+    </div>
+    <div class="col">
+      <label for=""><b>Kilomteres</b></label>
+      <div>
+        {{miles | convert:'m'}}
+      </div>
+    </div>
+  </div>
+</div>
