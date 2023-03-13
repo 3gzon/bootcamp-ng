@@ -6,6 +6,7 @@ import { CardComponent } from './card/card.component';
 import { ConvertPipe } from './convert.pipe';
 import { ClassDirective } from './class.directive';
 import { TimesDirective } from './times.directive';
+import { ElementsModule } from './elements/elements.module';
 
 @NgModule({
   declarations: [
@@ -13,12 +14,10 @@ import { TimesDirective } from './times.directive';
     CardComponent,
     ConvertPipe,
     ClassDirective,
-    TimesDirective
+    TimesDirective,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, ElementsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
