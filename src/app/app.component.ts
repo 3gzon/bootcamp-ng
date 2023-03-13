@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  currentPage = 3;
+  currentPage = 0;
   images = [
     {
       title: 'title one',
@@ -23,5 +23,29 @@ export class AppComponent {
       title: 'title four',
       url: 'https://picsum.photos/id/234/200/300',
     },
+    {
+      title: 'title four',
+      url: 'https://picsum.photos/id/234/200/300',
+    },
+    {
+      title: 'title four',
+      url: 'https://picsum.photos/id/234/200/300',
+    },
+    {
+      title: 'title four',
+      url: 'https://picsum.photos/id/234/200/300',
+    },
+    {
+      title: 'title four',
+      url: 'https://picsum.photos/id/234/200/300',
+    },
+    {
+      title: 'title four',
+      url: 'https://picsum.photos/id/234/200/300',
+    },
   ];
+
+  checkIndex(index: number) {
+    return Math.abs(this.currentPage - index) < 5;
+  }
 }
