@@ -7,6 +7,8 @@ import { ConvertPipe } from './convert.pipe';
 import { ClassDirective } from './class.directive';
 import { TimesDirective } from './times.directive';
 import { ElementsModule } from './elements/elements.module';
+import { CollectionsModule } from './collections/collections.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,7 @@ import { ElementsModule } from './elements/elements.module';
     ClassDirective,
     TimesDirective,
   ],
-  imports: [BrowserModule, ElementsModule],
+  imports: [BrowserModule, RouterModule, ElementsModule, CollectionsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
