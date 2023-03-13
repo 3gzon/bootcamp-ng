@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { ConvertPipe } from './convert.pipe';
 import { ClassDirective } from './class.directive';
+import { TimesDirective } from './times.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     ConvertPipe,
-    ClassDirective
+    ClassDirective,
+    TimesDirective
   ],
   imports: [
     BrowserModule
