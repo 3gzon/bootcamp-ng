@@ -7,6 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class PlaceholderComponent {
   @Input() header = true;
-
   @Input() lines = 3;
 }
