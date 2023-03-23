@@ -1,0 +1,16 @@
+<app-divider>
+  Modules component
+</app-divider>
+<button (click)="onClick()">SHow modal</button>
+<app-modal (close)="onClick()" *ngIf="modalOpen">
+  <div modalTitle>
+    Modal title
+  </div>
+  <p>
+    Modal content
+  </p>
+
+  <div modalFooter>
+    <button (click)="onClick()" class="ui button">Close</button>
+  </div>
+</app-modal>
