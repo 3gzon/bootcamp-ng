@@ -7,6 +7,17 @@ import {Component} from '@angular/core';
 })
 export class ModsHomeComponent {
   modalOpen = false;
+  items: any = [
+    {
+      title: 'demo1', content: 'content'
+    },
+    {
+      title: 'demo1', content: 'content'
+    },
+    {
+      title: 'demo1', content: 'content'
+    },
+  ]
 
   onClick() {
     this.modalOpen = !this.modalOpen;
